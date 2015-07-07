@@ -199,7 +199,8 @@ class Command(BaseCommand):
                     logger.info("User '%s' added feedback via email to decision #%s" % (user, decision.id))
                     self._print_if_verbose(verbosity, "Found corresponding object '%s'" % decision.excerpt)
                 else:
-                    comment_text = msg_string                
+                    comment_text = msg_string
+
                     self._print_if_verbose(verbosity, "Creating comment '%s'." % (comment_text))
                     comment = Comment(user=user,
                                      user_name=user.get_full_name(),

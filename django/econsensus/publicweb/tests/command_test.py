@@ -102,7 +102,7 @@ class CommandTest(EconsensusFixtureTestCase):
                       str('To: %s <%s>' % (email.from_email, email.from_email)),
                       str('Subject: Re: %s' % email.subject),
                       '',
-                      "Dager: This is a bad idea", ''], ['']),)
+                      "Danger: This is a bad idea", ''], ['']),)
         try:
             management.call_command('process_email')
         except:

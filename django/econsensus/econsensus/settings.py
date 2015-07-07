@@ -277,7 +277,11 @@ TINYMCE_DEFAULT_CONFIG = {
     "theme_advanced_buttons3": ""
 }
 
-EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = '/econsensus/custom_notification'
+
+
 
 #Emails from organizations will be built around this address
 DEFAULT_FROM_EMAIL = 'econsensus@econsensus.org'

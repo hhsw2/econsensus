@@ -1,1 +1,1 @@
-[EC#{{observed.content_object.decision.id}}\{{observed.content_object.id}}] {{ observed.user_name }} replied: {{ observed.content_object.description|truncatewords:15 }}
+[EC#{{observed.content_object.decision.id}}\{{observed.content_object.id}}] {{ observed.user }} replied to: {{ observed.content_object.decision.excerpt|truncatewords:15 }}

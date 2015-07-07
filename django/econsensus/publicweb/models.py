@@ -297,7 +297,7 @@ def send_comment_notifications(comment, users):
 
     observation_manager = ObservationManager()
 
-    extra_context = dict({"observed": comment})
+    extra_context = dict({"observed": comment})     #swemail
     observation_manager.send_notifications(users, comment, COMMENT_NEW, extra_context, headers, from_email=comment.content_object.decision.get_email())
 
 

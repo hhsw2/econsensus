@@ -7,7 +7,7 @@ from views import (DecisionCreate, DecisionUpdate, DecisionDetail, DecisionList,
                     FeedbackUpdate, EconsensusActionitemCreateView,
                     EconsensusActionitemUpdateView,
                     EconsensusActionitemListView, OrganizationRedirectView,
-                    YourDetails, UserNotificationSettings,
+                    YourDetails, ContactUs, UserNotificationSettings,
                     EconsensusActionitemDetailView, DecisionSearchView)
 
 from models import Feedback
@@ -18,6 +18,12 @@ urlpatterns = patterns('econsensus.publicweb.views',
     url(r'^user_settings/your_details/$',
         YourDetails.as_view(),
         name='your_details'),
+    
+    url(r'^user_settings/contact_us/$',
+        ContactUs.as_view(),
+        name='contact_us'),
+                       
+                       
     url(r'^user_settings/notification_settings/(?P<org_slug>[-\w]+)/$',
         UserNotificationSettings.as_view(), name='notification_settings'),
     url(r'^add_watcher/(?P<decision_id>\d+)/$', AddWatcher.as_view(),

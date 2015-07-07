@@ -12,7 +12,7 @@ def send_observation_notices_for(observed, signal="post_save", extra_context=Non
     observed_items = ObservedItem.objects.all_for(observed, signal)
     for observed_item in observed_items:
         extra_context.update({"observed": observed})
-        send([observed_item.user], observed_item.notice_type.label, extra_context, headers, from_email=from_email)
+        send([observed_item.user], observed_item.notice_type.label, extra_context, headers, from_email=from_email) #swemail
     return observed_items
 
 def send_notice_for(observed, user, label, signal="post_save", extra_context=None, headers=None, from_email=settings.DEFAULT_FROM_EMAIL):
@@ -24,3 +24,5 @@ def send_notice_for(observed, user, label, signal="post_save", extra_context=Non
         extra_context = {}
     extra_context.update({"observed": observed})
     send([user], label, extra_context, headers, from_email=from_email)
+
+

@@ -144,3 +144,4 @@ class EconsensusFixtureTestCase(EconsensusTestCase):
         self.login(orig_user)
         return admin_user
 
+

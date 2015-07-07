@@ -1,7 +1,8 @@
-Comment from {{ observed.user_name }}: on Feedback #{{ observed.content_object.id }} (http://{{ current_site }}{{ observed.content_object.decision.get_absolute_url }}):
+Comment from {{ observed.user }} on Feedback #{{ observed.content_object.id }} (http://{{ current_site }}{{ observed.content_object.decision.get_absolute_url }}):
 
    -----------------------------------------------------------------
 {{ observed.comment|safe }}
+
    -----------------------------------------------------------------
 
 To view this on the website: http://{{ current_site }}{{ observed.content_object.decision.get_absolute_url }}

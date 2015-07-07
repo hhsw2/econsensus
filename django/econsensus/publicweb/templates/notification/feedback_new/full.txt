@@ -2,6 +2,7 @@ Feedback from {{ observed.author }}: {{ observed.get_rating_display|capfirst }} 
 
    -----------------------------------------------------------------
 {{ observed.description|safe }}
+
    -----------------------------------------------------------------
 
 To view this on the website: http://{{ current_site }}{{ observed.decision.get_absolute_url }}

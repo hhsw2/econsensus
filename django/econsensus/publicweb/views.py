@@ -22,7 +22,7 @@ from organizations.models import Organization, OrganizationOwner, OrganizationUs
 from haystack.views import SearchView
 from waffle import switch_is_active
 
-from publicweb.forms import (YourDetailsForm,
+from publicweb.forms import (YourDetailsForm, ContactUsForm,
         NotificationSettingsForm, EconsensusActionItemCreateForm,
         EconsensusActionItemUpdateForm, DecisionForm, FeedbackForm)
 from publicweb.models import Decision, Feedback, NotificationSettings
@@ -54,6 +54,23 @@ class YourDetails(UpdateView):
 
     def get_success_url(self):
         return reverse('your_details')
+
+
+
+class ContactUs(UpdateView):
+    template_name = 'contact_us.html'
+    
+    @method_decorator(login_required)
+    def dispatch(self, *args, **kwargs):
+        return super(ContactUs, self).dispatch(*args, **kwargs)
+    
+    def get_object(self, queryset=None):
+        return self.request.user
+    
+    def get_success_url(self):
+        return reverse('contact_us')
+
+
 
 
 class ExportCSV(View):

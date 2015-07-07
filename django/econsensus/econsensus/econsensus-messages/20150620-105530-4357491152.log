@@ -1,0 +1,31 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Account activation on localhost
+From: econsensus@econsensus.org
+To: hhsw2@cam.ac.uk
+Date: Sat, 20 Jun 2015 09:55:30 -0000
+Message-ID: <20150620095530.9894.6342@HHSs-MacBook-Air.local>
+
+
+
+
+Hi there!
+
+
+We've had a request to set up an account for you at Econsensus.
+To verify that the email given during the sign-up process is the correct one,
+please click the link below, so that we can activate your account.
+
+http://127.0.0.1:8000/accounts/activate/ffd377ad67c71315d430a4780fb15c24e4a6bfcd/
+
+
+Link will be valid for 7 days.
+
+
+If you don't know why you are receiving this email, please ignore it.
+
+
+All the best,
+Your friendly <a href="https://econsensus.org/">Econsensus</a> server.
+-------------------------------------------------------------------------------

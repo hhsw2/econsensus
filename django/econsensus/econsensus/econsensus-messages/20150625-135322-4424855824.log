@@ -1,0 +1,21 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: You've been invited to join test organisation on localhost!
+From: <econsensus@econsensus.org>
+To: qw236@cam.ac.uk
+Date: Thu, 25 Jun 2015 12:53:22 -0000
+Message-ID: <20150625125322.15596.96402@HHSs-MacBook-Air.local>
+
+
+
+
+You've been invited to join test organisation on localhost by admin.
+
+Follow this link to create your user account. The link is valid for 7 days.
+
+http://127.0.0.1:8000/invitations/3-42w-9e71c59787adf8670e53/
+
+If you were not expecting this email then please delete it, and your user account will not be activated.
+
+-------------------------------------------------------------------------------
